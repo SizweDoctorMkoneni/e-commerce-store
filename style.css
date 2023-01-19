@@ -1,0 +1,441 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Landing Page CSS Code*/
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(images/17.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.landing-page .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin: 0 70px;
+}
+
+.landing-page .navbar .logo a{
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.landing-page .navbar .nav-list{
+    margin-right: 30px;
+}
+
+.landing-page .navbar .nav-list ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.landing-page .navbar .nav-list ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.landing-page .navbar .nav-icons{
+  display: flex;
+  flex-direction: row;  
+}
+
+.landing-page .navbar .nav-icons img{
+    width: 26px;
+    height: 26px;
+    margin: 0 3px;
+}
+
+.landing-page .navbar .active{
+    background: #6d9773;
+}
+
+
+.landing-page .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+.landing-page .text h2{
+    font-size: 55px;
+    margin: 0;
+}
+
+.landing-page .text button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 170px;
+    margin-top: 30px;
+    margin-right: 50%;
+    padding: 6px 8px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.landing-page .text button:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 500;
+}
+
+/*Page 2 - CSS Code with Hover Effect*/
+
+.page-2{
+    background: rgb(245, 234, 136);
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.products{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-row{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    position: relative;
+    display: flex;
+    width: 528px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.product-description h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.product-description button{
+    width: 170px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 6px 8px;
+    color: black;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.product-description button:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 500;
+}
+
+.product-description > * {
+    transform: translateY(20px);
+    transition: trnaform 0.25s;
+}
+
+.product-description:hover{
+    opacity: 1;
+}
+
+.product-description:hover > * {
+    transform: translateY(0);
+}
+
+/*Page 3 - Office plants*/
+
+.page-3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.page-3-images{
+    width: 3000px;
+    height: 100%;
+    display: flex;
+    background: rgb(77, 75, 75);
+}
+
+.page-3-images .img{
+    display: flex;
+}
+
+.page-3-images .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-3-text{
+    display: flex;
+    flex-direction: column;
+    background: rgb(245, 234, 136);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.page-3-icons{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+.page-3-icons img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-3-text h2{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.page-3-text p{
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+}
+
+.page-3-text button{
+    padding: 6px 10px;
+    letter-spacing: 2px;
+    width: 170px;
+    color: black;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.page-3-text button:hover{
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    border: none;
+}
+
+/*Page 4 - testiminials*/
+
+.page-4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #6d9773;
+}
+
+.page-4 .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 30px 0;
+}
+
+.page-4 .heading h2{
+    color: black;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.page-4 .testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-4 .testimonials .testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+    background: rgb(245, 234, 136);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0, 0.5);
+}
+
+.page-4 .testimonials .testimonial:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    transform: scale(1.1);
+}
+
+.page-4 .testimonials .testimonial img{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+
+.page-4 .testimonials .testimonial h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.page-4 .testimonials .testimonial p{
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+.page-4 .testimonials .testimonial p span{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+}
+
+.footer .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+    color: white;
+}
+
+.footer .column .logo h1 a{
+    margin: 0;
+    color: white;
+}
+
+.footer .column .logo img{
+    width: 100px;
+    height: 80px;
+    margin: 0;
+}
+
+.footer .column .logo p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.footer .column h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.footer .column a ul{
+    list-style-type: none;  
+    display: flex;
+    flex-direction: column;  
+    margin: 8px 0;
+    padding: 0;
+    color: white;
+}   
+
+.footer .column a {
+    text-decoration: none;
+    color: black;
+    justify-content: left;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.copyright hr{
+    background: white;
+    width: 100%;
+}
+
+.copyright p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
